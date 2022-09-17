@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="modal-btn" class="button">Game Rules</button>
+    <div id="my-modal" class="modal">
+        <div class="model-content">
+            <div class="model-header">
+                <span class="close">&times;</span>
+                <h2>About Game</h2>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>At a time only one player is allowed to make a move, player 1 will start the game.</li>
+                    <li>Once a player has initiated his/her move, next player will given a turn to make a move</li>
+                    <li>Every a time button is clicked score will be incremented by some random integer value within
+                        a range of 1 to 10</li>
+                    <li>Player whose score crosses the target value will be declared as the winner.</li>
+                    <li>Target value is being set to 100.</li>
+                    <li>If you want to play the game again then simply press reset button and you can start all over
+                        again.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h3>Have Fun!!(Although it's a boring game but still)</h3>
+            </div>
+        </div>
+    </div>
+    <div class="head" style="border: 1px solid;">
+        <h1>Reach the Target</h1>
+        <button class="reset">RESET</button>
+    </div>
+    <div class="Game1" style="border: 1px solid;">
+        <div class="player">
+            <div class="ply1">0</div>
+            <button class="btn" id="btn1">Player1</button>
+        </div>
+        <div class="player">
+            <div class="ply2">0</div>
+            <button class="btn" id="btn2">Player2</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
